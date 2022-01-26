@@ -1,16 +1,13 @@
 import { useState } from "react";
 import { Tweet } from "./components/Tweet";
+import './App.css';
+import {AppRoutes} from "./Routes"
 
 function App() {
-  //Variável com valores mais recentes da variável / função pra substituir o valor dessa var
-    const [tweet,setTweets] = useState<string[]>([])
+
   return (
-    
-  <div>
-    <Tweet text="tweet1"/>
-    <Tweet text="tweet2"/>
-    <Tweet text="tweet3"/>
-  </div>
+    <AppRoutes />
   )
 }
+
 export default App
